@@ -1,0 +1,16 @@
+{
+  "name": "ds",
+  "version": "1.0.0",
+  "description": "data structures implementation in JavaScript by pdl39",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pdl39",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.23.0"
+  }
+}
