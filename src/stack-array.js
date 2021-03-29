@@ -21,9 +21,22 @@ export default class StackArr {
     this.data.push(val);
     return this.data;
   }
+  
+  // Use pushNode instead of push in cases where the stack elements must be nodes instead of values.
+  pushNode(val) {
+    this.data.push(new Node(val));
+    return this.data;
+  }
 
   pop() {
     return this.data.pop();
+  }
+}
+
+class Node {
+  constructor(val=null) {
+    this.value = val;
+    this.next = null;
   }
 }
 
