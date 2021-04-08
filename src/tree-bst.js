@@ -161,7 +161,7 @@ class BST {
     else if (this.hasOnlyRightChild(node)) {
       node.value = node.right.value;
       node.left = node.right.left;
-      node.right = node.left.right;
+      node.right = node.right.right;
     }
     else {
       if (this.height(node.left) > this.height(node.right)) {
