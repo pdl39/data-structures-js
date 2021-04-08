@@ -15,10 +15,28 @@ export class NodeType2 {
   }
 }
 
-// Can use as a Tree Node:
+// Can use as a Tree Node with a list of all its descendants:
 export class NodeType3 {
   constructor(val=null) {
     this.value = val;
     this.children = [];
+  }
+}
+
+// Can use as a Tree Node with left and right child properties:
+export class NodeType4 {
+  constructor(val=null) {
+    this.value = val;
+    this.left = null;
+    this.right = null;
+  }
+}
+
+// Can use as a Graph Node:
+export class NodeType5 {
+  constructor(val=null) {
+    this.value = val;
+    this.adjacent = [];
+    this.visited = false;
   }
 }

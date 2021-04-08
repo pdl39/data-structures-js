@@ -36,7 +36,7 @@ export default class Queue {
 
   // Adding to the end (last node) of the Queue (the tail of the linked list).
   // --> linkedlist.append()
-  add(val) {
+  enqueue(val) {
     let node = new Node(val);
 
     if (this.first === null) {
@@ -54,7 +54,7 @@ export default class Queue {
 
   // Removing from the beginning (first node) of the Queue (the head of the linked list).
   // --> linkedlist.deleteFirst()
-  remove() {
+  dequeue() {
     if (this.first === null) return undefined;
 
     let prevFirst = this.first;
@@ -72,26 +72,26 @@ const myQueue = new Queue();
 console.log(myQueue.peek());
 console.log(myQueue.isEmpty());
 console.log(myQueue.showArray());
-myQueue.add(5);
+myQueue.enqueue(5);
 console.log(myQueue.showArray());
-myQueue.add(6);
+myQueue.enqueue(6);
 console.log(myQueue.showArray());
-myQueue.add(7);
+myQueue.enqueue(7);
 console.log(myQueue.showArray());
-myQueue.add(8);
+myQueue.enqueue(8);
 console.log(myQueue.showArray());
-myQueue.add(9);
+myQueue.enqueue(9);
 console.log(myQueue.showArray());
 console.log(myQueue);
-console.log("removed:", myQueue.remove());
+console.log("dequeued:", myQueue.dequeue());
 console.log(myQueue.showArray());
-console.log("removed:", myQueue.remove());
+console.log("dequeued:", myQueue.dequeue());
 console.log(myQueue.showArray());
-console.log("removed:", myQueue.remove());
+console.log("dequeued:", myQueue.dequeue());
 console.log(myQueue.showArray());
-console.log("removed:", myQueue.remove());
+console.log("dequeued:", myQueue.dequeue());
 console.log(myQueue.showArray());
-console.log("removed:", myQueue.remove());
+console.log("dequeued:", myQueue.dequeue());
 console.log(myQueue.showArray());
 console.log(myQueue);
 
