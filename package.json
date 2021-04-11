@@ -8,9 +8,5 @@
   },
   "author": "pdl39",
   "license": "ISC",
-  "type": "module",
-  "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.23.0"
-  }
+  "type": "module"
 }
